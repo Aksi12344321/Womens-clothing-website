@@ -1,0 +1,30 @@
+.collection {
+}
+
+.collection__title {
+  margin-bottom: rem(24);
+
+  @include mobile {
+    margin-bottom: rem(8);
+  }
+}
+
+.collection__cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: rem(24);
+
+  @include mobile {
+    gap: rem(16);
+  }
+}
+.collection__col {
+  display: flex;
+  flex-direction: column;
+  gap: rem(64);
+  justify-content: space-between;
+
+  @include mobile {
+    gap: rem(24);
+  }
+}

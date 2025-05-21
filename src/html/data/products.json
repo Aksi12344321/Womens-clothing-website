@@ -1,0 +1,49 @@
+[
+  {
+    "img": "01",
+    "title": "Precious time",
+    "desc": "Nice clothes for you",
+    "price": "150",
+    "colors": ["black", "blue", "green"]
+  },
+
+  {
+    "img": "02",
+    "title": "Beautiful moment",
+    "desc": "Make a splash",
+    "price": "120",
+    "colors": ["olive", "navy", "black"]
+  },
+
+  {
+    "img": "03",
+    "title": "Cool weave",
+    "desc": "Be yourself",
+    "price": "215",
+    "colors": ["pink", "olive", "green"]
+  },
+
+  {
+    "img": "04",
+    "title": "Morning feeling",
+    "desc": "You're good",
+    "price": "150",
+    "colors": ["white", "olive", "green"]
+  },
+
+  {
+    "img": "05",
+    "title": "Forbid temptation",
+    "desc": "Attractive grace",
+    "price": "230",
+    "colors": ["navy", "pink", "black"]
+  },
+
+  {
+    "img": "06",
+    "title": "Majestic Amazon",
+    "desc": "Be courageous",
+    "price": "210",
+    "colors": ["navy", "blue", "green"]
+  }
+]

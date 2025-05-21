@@ -1,0 +1,19 @@
+.footer {
+  margin-top: rem(88);
+  background-color: #000;
+  padding: rem(24) 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: 180%;
+  text-transform: capitalize;
+  color: var(--neutral-graycbcbcb);
+
+  @include mobile {
+    margin-top: rem(24);
+    padding: rem(8) 0;
+  }
+}
+
+.footer__copyright {
+}

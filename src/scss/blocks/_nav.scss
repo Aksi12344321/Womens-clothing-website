@@ -1,0 +1,29 @@
+.nav {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: rem(18);
+  line-height: rem(32);
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--neutral-gray404040);
+
+  @include tablet {
+    font-size: rem(16);
+  }
+}
+.nav__list {
+  display: flex;
+  column-gap: rem(30);
+
+  @include tablet {
+    column-gap: rem(15);
+  }
+
+  &-link {
+    color: var(--neutral-gray404040);
+
+    &.active {
+      color: #000;
+    }
+  }
+}

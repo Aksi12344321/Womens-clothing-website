@@ -1,0 +1,18 @@
+.top-info {
+  position: relative; //прописали для использования z-index
+  z-index: 199;
+  padding: rem(8) 0 rem(7);
+  background: var(--primary-primary-600);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: rem(12);
+  letter-spacing: 0.07em;
+  text-align: center;
+  color: var(--white);
+
+  @include mobile {
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: capitalize;
+  }
+}

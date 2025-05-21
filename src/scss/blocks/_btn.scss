@@ -1,0 +1,67 @@
+.btn,
+a.btn {
+  //a.btn - чтобы точнее стилизовать, обращаемся по ссылке к классу тоже
+  display: inline-block; //чтобы ссылка корректно обрабатывалась блочной моделью
+  padding: rem(8);
+  min-width: rem(184);
+  height: rem(40);
+  background: var(--white);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: rem(24);
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--black);
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background: var(--neutral-grayededed);
+  }
+
+  @include mobile {
+    padding: rem(8) rem(9);
+    min-width: unset;
+  }
+
+  &--small {
+    min-width: unset;
+    padding-left: rem(15);
+    padding-right: rem(15);
+  }
+
+  &--mobile-wide {
+    @include mobile {
+      width: 100%;
+      min-width: unset;
+      text-align: left;
+      padding: rem(8) rem(16);
+    }
+  }
+}
+
+a.btn-outline,
+.btn-outline {
+  display: inline-block;
+
+  border: 1px solid var(--primary-primary-600);
+  padding: 8px 16px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--primary-primary-600);
+
+  &:hover {
+    color: var(--primary-primary-700);
+  }
+}

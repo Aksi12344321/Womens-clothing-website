@@ -1,0 +1,58 @@
+.hero {
+  height: rem(600);
+  padding-bottom: rem(103);
+  background-color: #999;
+  background-image: url("./../../img/hero/hero.jpg");
+  background-position: 30% center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include laptop-above {
+    //для retina изображений на больших экранах
+    background-image: url("./../img/hero/hero@2x.jpg");
+  }
+
+  @include mobile {
+    height: rem(551);
+    padding-bottom: rem(16);
+  }
+
+  .container {
+    //Т.к. у .hero задана высота
+    height: 100%;
+  }
+}
+
+.hero__content {
+  height: 100%; //Т.к. у .hero задана высота
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: rem(27);
+  align-items: flex-start; //чтобы элементы к левому краю прижались (чтобы кнопка не растягивалась)
+
+  @include mobile {
+    gap: rem(32);
+  }
+}
+.hero__title {
+  max-width: rem(494);
+  font-family: var(--font-family);
+  font-style: italic;
+  font-weight: 500;
+  font-size: rem(34);
+  line-height: rem(61);
+  text-transform: capitalize;
+  color: var(--neutral-grayf9f9f9);
+
+  @include tablet {
+    max-width: rem(250);
+  }
+
+  @include mobile {
+    max-width: rem(168);
+    font-family: var(--font-family);
+    font-size: rem(20);
+    line-height: 180%;
+  }
+}

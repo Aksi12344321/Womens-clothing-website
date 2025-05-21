@@ -1,0 +1,22 @@
+.best {
+}
+
+.best__title-wrapper {
+  margin-bottom: rem(24);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mobile {
+    margin-bottom: rem(8);
+  }
+}
+
+.best__cards {
+}
+
+.best_link {
+  @include mobile {
+    display: none;
+  }
+}

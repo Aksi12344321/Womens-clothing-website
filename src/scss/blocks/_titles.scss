@@ -1,0 +1,42 @@
+.title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: rem(32);
+  line-height: rem(45);
+  text-transform: capitalize;
+  color: var(--black);
+
+  @include mobile {
+    font-weight: 700;
+    font-size: rem(20);
+  }
+}
+
+.title-1 {
+  margin: 1em 0 0.5em;
+  /* font-size: 38px; */
+  font-size: rem(38);
+  font-weight: 700;
+  font-family: var(--font-titles);
+}
+
+.title-2 {
+  margin: 1em 0 0.5em;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: var(--font-titles);
+}
+
+.title-3 {
+  margin: 1em 0 0.5em;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: var(--font-titles);
+}
+
+.title-4 {
+  margin: 1em 0 0.5em;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--font-titles);
+}

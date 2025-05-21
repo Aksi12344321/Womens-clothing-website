@@ -1,0 +1,48 @@
+.header {
+  padding: rem(16) 0 rem(18);
+  position: relative; //прописали для использования z-index
+  z-index: 199;
+  background-color: #fff;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include mobile {
+    padding: rem(4) 0 rem(8);
+  }
+}
+
+.header__logo {
+  flex-shrink: 0;
+}
+
+.header__nav {
+  margin-left: auto;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.header__nav-btn {
+  display: none;
+}
+
+.header__account {
+  &--first {
+    margin-left: auto; //Это сдвигает элемент максимально вправо в строке, если родитель — flex-контейнер.
+    margin-right: rem(24);
+
+    @include tablet {
+      margin-right: rem(12);
+    }
+
+    @include mobile {
+      order: -1;
+      margin-left: unset;
+    }
+  }
+}

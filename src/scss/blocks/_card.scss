@@ -1,0 +1,109 @@
+.card {
+  position: relative;
+}
+.card__fav-btn {
+  position: absolute;
+  top: rem(24);
+  right: rem(24);
+  z-index: 9;
+
+  @include mobile {
+    top: rem(10);
+    right: rem(10);
+  }
+}
+
+.card__btn-fav {
+  &:hover .icon--favorite {
+    stroke: rgb(227, 50, 121);
+  }
+
+  &--selected .icon--favorite {
+    stroke: var(--state-color-error);
+    fill: var(--state-color-error);
+
+    &:hover {
+      stroke: var(--state-color-error);
+    }
+  }
+}
+
+.card__body {
+  padding: rem(5.5) rem(8);
+  display: grid;
+  gap: rem(8);
+
+  @include mobile {
+    padding: 0;
+  }
+}
+.card__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: rem(16);
+  line-height: 140%;
+  text-transform: capitalize;
+  color: var(--black);
+
+  @include mobile {
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: 140%;
+  }
+
+  a {
+    color: var(--black);
+  }
+
+  a::after {
+    //рисует overlay и растягивает ссылку на всего родителя
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+.card__cols {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: rem(12);
+
+  @include mobile {
+    flex-wrap: wrap;
+  }
+}
+.card__desc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: 180%;
+  text-transform: capitalize;
+  color: var(--black);
+
+  @include mobile {
+    font-size: rem(14);
+    line-height: 140%;
+  }
+}
+.card__price {
+  text-align: right;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: rem(16);
+  line-height: 180%;
+  text-transform: capitalize;
+  color: var(--black);
+
+  @include mobile {
+    font-weight: 600;
+    font-size: rem(14);
+    line-height: 140%;
+  }
+}
+.card__colors {
+  display: flex;
+  gap: rem(8);
+  align-items: center;
+}

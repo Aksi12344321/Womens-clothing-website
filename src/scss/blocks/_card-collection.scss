@@ -1,0 +1,24 @@
+.card-collection {
+  position: relative;
+}
+.card-collection__img {
+}
+.card-collection__link {
+  position: absolute;
+  right: rem(16);
+  bottom: rem(16);
+
+  @include mobile {
+    position: static;
+  }
+
+  & .btn::after {
+    //btn подразумеваем под одной кнопкой
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    content: "";
+  }
+}
