@@ -1,8 +1,8 @@
 # 😊 Сайт женской одежды altergo
 
-Демо-версия https://aksi12344321.github.io/-Women-s-clothing-website/
+Демо-версия https://aksi12344321.github.io/Womens-clothing-website/
 
-![Logo](img/01.jpg)
+![Logo](docs/img/01.jpg)
 
 - HTML,
 - SCSS,
