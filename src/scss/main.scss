@@ -11,7 +11,27 @@
 @import "./base/sticky-footer";
 
 /* Blocks */
-@import "./blocks/*.scss";
+/* @import "./blocks/*.scss"; */
+@import "./blocks/header";
+@import "./blocks/account";
+@import "./blocks/best";
+@import "./blocks/btn";
+@import "./blocks/card-collection";
+@import "./blocks/card";
+@import "./blocks/collection";
+@import "./blocks/colors";
+@import "./blocks/follow";
+@import "./blocks/footer";
+@import "./blocks/hero";
+@import "./blocks/icons";
+@import "./blocks/logo";
+@import "./blocks/main";
+@import "./blocks/mobile-nav";
+@import "./blocks/nav-icon";
+@import "./blocks/nav";
+@import "./blocks/swiper";
+@import "./blocks/titles";
+@import "./blocks/top-info";
 
 /* No styles code below. Only in modules */
 /* Не пишите CSS код ниже. Только в подключаемых файлах */
